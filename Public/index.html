@@ -1,0 +1,38 @@
+<!-- 
+
+ Author: Matthew Spreitzer
+
+ Class:  Software Engineering
+
+ Project: Lab 2 / Dice Roller
+
+ Description: This is the HTML file for my Dice Roller it has the links to the JS and CSS files it uses and also the button with autofocus the user has to roll the dice. It also runs when the page is first loaded.
+It displays the Attacks 3 dice and the Defenders 2 Dice. Also it displays who won the turn depending on the dice each play got.
+-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title and the JS and CSS files this program needs -->
+        <meta charset="UTF-8">
+        <header><title>Risk Dice Roller</title></header>
+        <link rel="stylesheet" href="DiceRoller.css">
+        <script src="DiceRoller.js"></script>
+    </head>
+    <h1 style="color:black;"><b>Risk Dice Roller</b></h1>
+    <body> 
+    <body onload="rollFiveDiceShowWinner()"> 
+        This will roll dice for the game Risk. This requires 3 red dice for the attacker and 2 white dice for the defender. <br>
+        A winner is decided by who has the highest numbers between their respective dice, ties go to the defender.
+        <br>
+        <!-- This is the Button for the user to click -->
+        <button type="button" autofocus onclick="rollFiveDiceShowWinner()">Roll Dice</button>
+        <br>
+        <br>
+        Attacker's Dice - 1 <input id="attackerDice1" type="textAttack" value="" size="5" disabled>  Defender's Dice - 1 <input id="defenderDice1" type="textDefend" value="" size="5" disabled><br><br>
+        Attacker's Dice - 2 <input id="attackerDice2" type="textAttack" value="" size="5" disabled>  Defender's Dice - 2 <input id="defenderDice2" type="textDefend" value="" size="5" disabled><br><br>
+        Attacker's Dice - 3 <input id="attackerDice3" type="textAttack" value="" size="5" disabled><br><br>
+        <br>
+        <!-- This is where the Winner is displayed -->
+        Winner:  <input id="Winner" type="textWinner" value="" size="10" disabled><br><br>
+    </body>
+</html>

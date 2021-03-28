@@ -1,0 +1,28 @@
+/*
+THis is the CSS file for my Dice Roller it has simple formatting for the game and the text boxes around the dice rolls.
+*/
+
+input { text-align:right; }
+body {
+    margin: 10px;
+    padding: 10px;
+    border-style: dotted;
+}
+input[type=textAttack] {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: red;
+    color: Black;
+}
+input[type=textDefend] {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: White;
+    color: Black;
+  }
+input[type=textWinner] {
+    border: 2px solid Black;
+    border-radius: 4px;
+    background-color: White;
+    color: Black;
+  }
